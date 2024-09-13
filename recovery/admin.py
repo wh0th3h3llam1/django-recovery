@@ -5,7 +5,7 @@ from .models import RecoveryCode
 
 class RecoveryCodeAdmin(admin.ModelAdmin):
 
-    list_display = ("code", "used", "used_at")
+    list_display = ("code", "user", "used", "used_at")
     list_filter = ("used", "used")
 
 
