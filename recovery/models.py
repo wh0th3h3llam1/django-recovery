@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from .managers import AllRecoveryCodeManager, RevokedRecoveryManager
+# from .managers import AllRecoveryCodeManager, RevokedRecoveryManager
 
 # Create your models here.
 
@@ -27,8 +27,8 @@ class RecoveryCode(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(blank=True, null=True, auto_now=True)
 
-    objects = RevokedRecoveryManager()
-    all_codes = AllRecoveryCodeManager()
+    # objects = RevokedRecoveryManager()
+    # all_codes = AllRecoveryCodeManager()
 
     class Meta:
         verbose_name = _("Recovery Code")
