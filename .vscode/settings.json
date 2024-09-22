@@ -20,6 +20,11 @@
             "depth": 6,
             "includeAllSymbols": true
         },
+        {
+            "name": "rest_framework",
+            "depth": 5,
+            "includeAllSymbols": true
+        },
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.indexing": true,
