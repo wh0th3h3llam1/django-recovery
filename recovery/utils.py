@@ -15,7 +15,7 @@ def get_recovery_code():
     return "".join(secrets.choice(choices) for _ in range(RECOVERY_CODE_LENGTH))
 
 
-def get_list_of_recovery_codes(num: int = 10) -> list:
+def get_list_of_recovery_codes(num: int = 10) -> list[str]:
     """Get list of `n` recovery codes
 
     :param num: Number of codes to generate, defaults to 10
